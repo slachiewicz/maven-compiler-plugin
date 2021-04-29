@@ -1,0 +1,40 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.codehaus.groovy:groovy-eclipse-batch
+    versions:
+    - 3.0.7-02
+    - 3.0.7-03
+  - dependency-name: org.apache.maven.plugins:maven-invoker-plugin
+    versions:
+    - 3.2.1
+  - dependency-name: org.codehaus.plexus:plexus-compiler-javac
+    versions:
+    - 2.8.5
+    - 2.8.8
+  - dependency-name: org.codehaus.plexus:plexus-compiler-manager
+    versions:
+    - 2.8.5
+    - 2.8.8
+  - dependency-name: org.codehaus.plexus:plexus-compiler-api
+    versions:
+    - 2.8.5
+    - 2.8.8
+  - dependency-name: org.mockito:mockito-core
+    versions:
+    - 3.7.7
+  - dependency-name: junit:junit
+    versions:
+    - 4.13.1
+  - dependency-name: org.codehaus.groovy:groovy-eclipse-compiler
+    versions:
+    - 3.6.0-03
+  - dependency-name: org.apache.maven.plugins:maven-plugins
+    versions:
+    - "34"
